@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilkan deret bilangan prima</title>
+</head>
+
+<body>
+    <script>
+        let num = prompt(`Masukkan batas bilangan`);
+
+        function isPrime(bil) {
+            let sqrtnum = Math.round(Math.sqrt(bil));
+            for (let i = 2; i <= sqrtnum; i++)
+                const cek = (bil % i === 0) ? false : true;
+            //     if (bil % i == 0)
+            //         return false;
+            // return true;
+        }
+        if (num <= 1) {
+            console.log(`Mohon masukkan bilangan lain`);
+        } else {
+            for (let angka = 2; angka < num; angka++) {
+                if (isPrime(angka)) console.log(angka);
+            }
+        }
+    </script>
+</body>
+
+</html>

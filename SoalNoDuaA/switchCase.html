@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penentuan hari esok dengan Swicth-Case</title>
+</head>
+
+<body>
+    <script>
+        let today = prompt(`Hari ini hari apa?`);
+        let tomorrow;
+
+        // menggunakan switch-case
+        switch (today) {
+            case 'senin' && 'SENIN' && 'Senin':
+                tomorrow = 'Besok adalah hari Selasa';
+                break;
+            case 'selasa':
+                tomorrow = 'Besok adalah hari Rabu';
+                break;
+            case 'rabu':
+                tomorrow = 'Besok adalah hari Kamis';
+                break;
+            case 'kamis':
+                tomorrow = 'Besok adalah hari Jumat';
+                break;
+            case 'jumat':
+                tomorrow = 'Besok adalah hari Sabtu';
+                break;
+            case 'sabtu':
+                tomorrow = 'Besok adalah hari Minggu';
+                break;
+            case 'minggu':
+                tomorrow = 'Besok hari Senin';
+                break;
+            default:
+                tomorrow = 'Masukkanmu salah. Coba gunakan huruf kecil semua';
+                break;
+        }
+
+        alert(tomorrow);
+    </script>
+</body>
+
+</html>

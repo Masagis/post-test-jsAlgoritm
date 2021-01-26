@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penentuan hari esok dengan If-Else</title>
+</head>
+
+<body>
+    <script>
+        let toDay = prompt(`Masukkan hari ini`);
+        let tomorrow;
+
+        // use ternary fAIled
+        // var func1 = function () {
+        //     return toDay === "senin" ? tomorrow = "Besok adalah hari Selasa" :
+        //         toDay === "selasa" ? tomorrow = "Besok adalah hari Rabu" :
+        //         toDay === "rabu" ? tomorrow = "Besok adalah hari Kamis" :
+        //         toDay === "kamis" ? tomorrow = "Besok adalah hari Jumat" :
+        //         toDay === "jumat" ? tomorrow = "Besok adalah hari Sabtu" :
+        //         toDay === "sabtu" ? tomorrow = "Besok adalah hari Minggu" :
+        //         toDay === "minggu" ? tomorrow = "Besok adalah hari Senin" :
+
+        // }
+        // Use if-else
+        if (toDay === "senin") {
+            tomorrow = "Besok adalah hari Selasa";
+        } else if (toDay === "selasa") {
+            tomorrow = "Besok adalah hari Rabu";
+        } else if (toDay === "rabu") {
+            tomorrow = "Besok adalah hari Kamis";
+        } else if (toDay === "kamis") {
+            tomorrow = "Besok adalah hari Jumat";
+        } else if (toDay === "jumat") {
+            tomorrow = "Besok adalah hari Sabtu";
+        } else if (toDay === "sabtu") {
+            tomorrow = "Besok adalah hari Minggu";
+        } else if (toDay === "minggu") {
+            tomorrow = "Besok adalah hari Senin";
+        } else {
+            tomorrow = "Masukkanmu salah. Coba gunakan huruf kecil semua";
+        }
+        alert(tomorrow);
+    </script>
+</body>
+
+</html>

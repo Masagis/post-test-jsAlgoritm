@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilkan deret bilangan ganjil</title>
+</head>
+
+<body>
+    <script>
+        const arr = [];
+        const num = prompt(`Masukkan batas bilangan`);
+
+        function bilGanjil(odd) {
+            for (let i = 0; i <= odd; i++) {
+                if (i % 2 !== 0) {
+                    arr.push(i);
+                }
+            }
+        }
+        bilGanjil(num);
+        console.log(arr);
+    </script>
+</body>
+
+</html>
